@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arapey';
+    background-color: #eeeeee;
+    color: #914d20;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.navbar a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: #914d20;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #d9d9d9;
+}
+
+.background-image {
+    background-image: url('img/olho.png')
+}
+
+header {
+    font-weight: bold;
+    background-color: #eeeeee;
+    padding: 20px;
+    font-size: 1.5em
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav
+ul li a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: normal;
+    border: 2px solid #914d20;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #914d20;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #9C5E36;
+    color: #d9d9d9;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+main h1 {
+    font-size: 2.8em;
+    margin: 10px 0;
+}
+
+main p {
+    font-size: 1.5em;
+    margin: 20px auto;
+    width: 50%;
+    border: 2px solid #914d20;
+    padding: 20px;
+    border-radius: 25% 10%;
+    line-height: 1.5em;
+}
+
+.paragrafo {
+    font-family: 'Arapey';
+    font-size: 40px;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.catalogo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.contato {
+    margin-top: 40px;
+}
+
+.contato p {
+    font-size: 1.5em;
+}
+
+a {
+    color: #914d20; text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 40px 0;
+    }
+
+    main h1 {
+        font-size: 2.2em;
+    }
+
+    main p {
+        font-size: 1.2em;
+        width: 90%;
+        padding: 15px;
+    }
+
+     .catalogo {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5em
+    }
+
+    .catalogo img {
+        margin-bottom: 20px;
+    }
+
+    .contato p {
+        font-size: 1.5em;
+    }
+}
